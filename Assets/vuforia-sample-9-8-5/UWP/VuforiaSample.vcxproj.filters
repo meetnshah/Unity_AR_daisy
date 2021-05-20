@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="VuforiaPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="App.idl" />
+    <Midl Include="MainPage.idl" />
+    <Midl Include="VuforiaPage.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="MainPage.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="VuforiaPage.cpp" />
+    <ClCompile Include="..\CrossPlatform\AppController.cpp">
+      <Filter>CrossPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrossPlatform\MathUtils.cpp">
+      <Filter>CrossPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\DeviceResources.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\DXRenderer.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Texture.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CrossPlatform\tiny_obj_loader.cpp">
+      <Filter>CrossPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="VuforiaPage.h" />
+    <ClInclude Include="..\CrossPlatform\AppController.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrossPlatform\Log.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrossPlatform\MathUtils.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrossPlatform\Models.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\DeviceResources.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\DirectXHelper.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\StepTimer.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\DXRenderer.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\ShaderStructures.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Texture.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrossPlatform\tiny_obj_loader.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CrossPlatform\MemoryStream.h">
+      <Filter>CrossPlatform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-16_altform-lightunplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-lightunplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-32_altform-lightunplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-48_altform-lightunplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-256_altform-lightunplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square310x310Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ic_imagetarget.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ic_modeltarget.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\backarrow_black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\backarrow_pressed.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\backarrow_white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="..\Assets\ModelTargets\VikingLander.jpg">
+      <Filter>Data sets</Filter>
+    </Image>
+    <Image Include="..\Assets\ImageTargets\Astronaut.jpg">
+      <Filter>Data sets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CrossPlatform">
+      <UniqueIdentifier>{d7e4561b-c85a-4e15-a0fe-1b5b70528c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data sets">
+      <UniqueIdentifier>{95e15d86-b03d-4e6c-b52c-7e58e814113b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{a89758f1-58dc-4454-9bb0-6b675848e901}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PropertySheet.props" />
+    <None Include="packages.config" />
+    <None Include="..\Assets\ImageTargets\StonesAndChips.dat">
+      <Filter>Data sets</Filter>
+    </None>
+    <None Include="$(ProjectDir)..\..\..\..\..\Vuforia_install\UWP\Internal\OpenAR\bin\$(Configuration)\$(PlatformTarget)\Vuforia.dll" />
+    <None Include="..\Assets\ModelTargets\VuforiaMars_ModelTarget.dat">
+      <Filter>Data sets</Filter>
+    </None>
+    <None Include="..\Assets\ModelTargets\VikingLander.mtl">
+      <Filter>Data sets</Filter>
+    </None>
+    <None Include="..\Assets\ImageTargets\Astronaut.mtl">
+      <Filter>Data sets</Filter>
+    </None>
+    <None Include="..\Assets\ModelTargets\VikingLander.obj">
+      <Filter>Data sets</Filter>
+    </None>
+    <None Include="..\Assets\ImageTargets\Astronaut.obj">
+      <Filter>Data sets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Assets\ImageTargets\StonesAndChips.xml">
+      <Filter>Data sets</Filter>
+    </Xml>
+    <Xml Include="..\Assets\ModelTargets\VuforiaMars_ModelTarget.xml">
+      <Filter>Data sets</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Rendering\VideoBackgroundPixelShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\VideoBackgroundVertexShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\ConstColorPixelShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\ConstColorVertexShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\VertexColorPixelShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\VertexColorVertexShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\TexturedPixelShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+    <FxCompile Include="Rendering\TexturedVertexShader.hlsl">
+      <Filter>Rendering</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

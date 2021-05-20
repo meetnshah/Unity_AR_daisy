@@ -1,0 +1,8 @@
+namespace VuforiaSample
+{
+    [default_interface]
+    runtimeclass VuforiaPage : Windows.UI.Xaml.Controls.Page
+    {
+        VuforiaPage();
+    }
+}
